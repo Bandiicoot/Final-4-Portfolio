@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+.formulario-de-contacto {
+  height: 660px;
+  background-color: rgb(65, 21, 185);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor__forms {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 88, 0, 0.5),
+    rgba(167, 0, 255, 0.085)
+  );
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  height: 580px;
+  width: 80%;
+  max-width: 560px;
+  box-shadow: 0px 0px 50px;
+  border-radius: 50px 20px;
+}
+
+.formulario {
+  height: 100%;
+  color: aliceblue;
+}
+
+label {
+  display: block;
+  font-family: "Poppins";
+}
+
+.titulo__form {
+  color: rgb(250, 250, 250);
+  margin-bottom: 10px;
+  font-family: "Montserrat";
+  font-size: 35px;
+}
+
+.nombre {
+  margin-top: 20px;
+  margin-bottom: -10px;
+}
+.mensaje {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.texto {
+  height: 40px;
+  width: 100%;
+  animation: leftIn 1.5s linear forwards;
+  animation-delay: calc(0.5s * var(--i));
+  background: none;
+  border-color: transparent;
+  background: rgba(255, 255, 255, 0.123);
+  color: aliceblue;
+  margin-top: 20px;
+  caret-color: transparent;
+  padding: 5px;
+  font-family: "Poppins";
+  font-size: medium;
+}
+
+.email-area {
+  animation: leftIn 1.7s linear forwards;
+}
+
+textarea {
+  width: 100%;
+  animation: leftIn 1.9s linear forwards;
+  animation-delay: calc(0.5s * var(--i));
+  background: none;
+  border-color: transparent;
+  background: rgba(255, 255, 255, 0.123);
+  color: aliceblue;
+
+  caret-color: rgb(172, 235, 63);
+  font-family: "Poppins";
+  font-size: medium;
+  padding-left: 10px;
+  padding-top: 2px;
+}
+
+.boton {
+  margin-top: 10px;
+  height: 60px;
+  width: 100%;
+  font-size: medium;
+  color: antiquewhite;
+  animation: topIn 2.3s linear forwards;
+  animation-delay: calc(0.5s * var(--i));
+  background: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.123);
+  font-family: "Poppins";
+  transition: all 6s ease;
+  cursor: pointer;
+}
+.boton:hover {
+  color: aliceblue;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 88, 0, 0.5),
+    rgba(167, 0, 255, 0.085)
+  );
+}
+@keyframes leftIn {
+  0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes topIn {
+  0% {
+    transform: translateY(-300%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 800px) {
+  .formulario-de-contacto {
+    height: 660px;
+    background-color: rgb(65, 21, 185);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titulo__form {
+    margin-bottom: 480px;
+    margin-right: 40px;
+  }
+}

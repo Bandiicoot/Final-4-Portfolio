@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+
+    <!-- Componentes -->
+    <link rel="stylesheet" href="./componentes/header.css" />
+    <script defer src="./componentes/header.js"></script>
+
+    <link rel="stylesheet" href="./componentes/buttonUp.css" />
+    <script defer src="./componentes/buttonUp.js"></script>
+
+    <link rel="stylesheet" href="./componentes/formulario.css" />
+    <script defer src="./componentes/formulario.js"></script>
+
+    <link rel="stylesheet" href="./componentes/footer.css" />
+    <script defer src="./componentes/footer.js"></script>
+    <!-- Estilos -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <script
+      defer
+      src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Orbitron:wght@500&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Pagina -->
+    <link rel="stylesheet" href="./pages/index.css" />
+    <script defer src="./pages/index.js"></script>
+  </head>
+  <body>
+    <div class="secciones">
+      <div class="bienvenida">
+        <header class="header-index"></header>
+        <div class="contenedor-titulo">
+          <h1 class="titulo__bienvenida">Hola</h1>
+          <h2 class="subtitulo__bienvenida">Soy Bandicoot</h2>
+        </div>
+      </div>
+      <div class="presentacion">
+        <div class="contenedor__texto">
+          <img
+            class="contenedor_texto-imagen"
+            src="./kisspng-crash-bandicoot-n-sane-trilogy-.jpg"
+            alt=""
+          />
+          <div class="separador">
+            <h2 class="presentacion__subt">Soy Bandicoot</h2>
+            <p class="presentacion__texto">
+              Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+              vehicula velit. Aenean lobortis posuere tristique. Phasellus
+              placerat arcu elementum nisi ultrices cursus. Etiam sit amet
+              aliquet lacus. Integer ut iaculis augue, sit amet tincidunt ex. In
+              eleifend justo et sodales semper. Mauris nec tortor lectus.
+              Curabitur nec ultricies dolor.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mis-servicios">
+        <h2>Mis servicios</h2>
+        <div class="contenedor-de-cards"></div>
+        <template id="servicios1-template">
+          <div class="card">
+            <img src="" alt="" class="card__img" />
+            <div class="card__content">
+              <h3 class="card-subtitle">Hago cosas</h3>
+              <p class="card-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint,
+                est quia, reiciendis optio quas reprehenderit, commodi suscipit
+                accusamus tenetur dicta quae ad vitae esse nulla? Adipisci
+                doloribus facilis explicabo dolore.
+              </p>
+            </div>
+          </div>
+        </template>
+      </div>
+      <div class="container-index"></div>
+      <div class="container-buttonUp"></div>
+      <footer class="container-footer"></footer>
+    </div>
+  </body>
+</html>

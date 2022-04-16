@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.contenedor__primera-parte {
+  background-color: rgb(65, 21, 185);
+}
+
+@media (min-width: 800px) {
+  .formulario-de-contacto,
+  .contenedor__primera-parte {
+    height: 100vh;
+    background: linear-gradient(
+      60deg,
+      rgb(235, 24, 24),
+      rgb(30, 30, 224),
+      green,
+      black
+    );
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+  }
+
+  .header {
+    padding-top: 30px;
+  }
+}
+@keyframes cambiar {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
