@@ -7,7 +7,7 @@ function fomrulario(el) {
     <form action="post" class="formulario" onsubmit="event.preventDefault()">
 
       <label for="nombre" class="nombre">Nombre</label>
-      <input type="text" class="texto" name="nombre" id="nombre" pattern="([a-z A-Z]{4,20})" required />
+      <input type="text" class="texto" name="nombre" id="nombre" pattern="([a-z A-Z]{1,20})" required />
 
       <label for="email" class="email nombre">Email</label>
       <input type="email" name="email" id="email" class="email-area texto" required />
